@@ -35,7 +35,7 @@ export default function MyBookings({ cars }) {
       setError('');
 
       const response = await fetch(
-        'http://localhost:5000/api/payments/create-checkout-session',
+        'https://driveease-car-rental-ei5b.onrender.com/api/payments/create-checkout-session',
         {
           method: 'POST',
           headers: {
