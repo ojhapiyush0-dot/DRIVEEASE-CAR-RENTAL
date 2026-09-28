@@ -1,0 +1,56 @@
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin: 24px 0 36px;
+}
+
+.stat-grid article {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.stat-grid span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.stat-grid strong {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 6px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin-bottom: 36px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+
+th {
+  background: var(--ivory-deep);
+}
+
+@media (max-width: 1024px) {
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
